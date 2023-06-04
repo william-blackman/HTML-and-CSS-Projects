@@ -1,0 +1,19 @@
+table {
+	border: 2px solid darkgrey;
+}
+
+td:hover {
+	background-color: navyblue;
+	color: cream;
+}
+
+tr, th	{
+	background-color: darkgrey;
+	color: white
+}
+	
+tr, td 	{
+	background-color: lightgrey;
+	color: black;
+}
+	
