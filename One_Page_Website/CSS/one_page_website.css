@@ -1,0 +1,11 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.contact {
+    width: 250px;
+    margin: 5px auto;
+    border: 2px rgb(36, 0, 194, 1);
+    border-radius: 2px;
+}
