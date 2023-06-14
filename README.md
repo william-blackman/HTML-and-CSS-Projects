@@ -24,7 +24,6 @@ The Tech Academy HTML &amp; CSS Course Projects
 
 
 <!-- Space Station Site Project -->
-##Space Station Site
 <a href="https://github.com/william-blackman/HTML-and-CSS-Projects/tree/main/Space_Station_Project">Space Station Site</a>
 
 
