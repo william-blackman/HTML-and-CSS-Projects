@@ -7,10 +7,14 @@
 	</head>
 	<body>
 		<nav>
-			<a href="#home">Home</a>
-			<a href="#pictures">Pictures</a>
-			<a href="#contact us">Contact Us</a>
-			<a href="#video">Dog Video</a>
+			<div class="menu-container">
+				<ul class="navlink">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#video">Dog Video</a></li>
+				</ul>
+			</div>
 		</nav>
 		<main>
 			<div id="home">
@@ -19,12 +23,24 @@
 				<p> She is the best dog! </p>
 			</div>
 			<div id="pictures">
-				<h6> Here is a photo of Harlo as a puppy: </h6>
-				<img width="490" height="560" src="harlo.jpg">
-				<blockquote> "What a good girl!" -everyone </blockquote>
-				<h6> Here are photos of some other dogs from the internet: </h6>
-				<a href="dog.html">Puppy in a field.</a><br>
-				<a href="https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg">A pitty dog.</a>
+				<div class="row">
+					<div class="column">
+						<h6> Here is a photo of Harlo as a puppy: </h6>
+						<div class="container">
+							<img width="440" height="560" src="harlo.jpg" class="center harlo-photo">
+							<div class="overlay">
+								<div class="overlay-text">The Best!</div>
+							</div>
+							<h3 class="bottom-center">Does it get any cuter?</h3>
+						</div>
+						<blockquote> "What a good girl!" -everyone </blockquote>
+					</div>
+					<div class="column">
+						<h6> Here are photos of some other dogs from the internet: </h6>
+						<a href="dog.html">Puppy in a field.</a><br>
+						<a href="https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg">A pitty dog.</a>
+					</div>
+				</div>
 			</div>
 			<div id="contact us">
 				<h1>Enter your info to get more Harlo updates</h1>
@@ -48,7 +64,7 @@ Favorite Dog Fact:	<input class="contact" type="text" value="What is your favori
 		<br>
 		<br>
 		<br>
-		<footer> Made by William Blackman </footer>
+		<footer class="text-center-bold"> Made by William Blackman </footer>
 
 	</body>
 </html>

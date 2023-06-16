@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
+    background-color: blanchedalmond;
 }
 
 
@@ -9,4 +10,115 @@ body {
     margin: 5px auto;
     border: 2px solid rgb(36, 0, 194, 1);
     border-radius: 2px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.harlo-photo {
+    filter: sepia(15%) brightness(110%);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-center-bold {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: max-content;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    z-index: 100;
+  }
+
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.bottom-center {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p:hover {
+    color: blueviolet;
+}
+
+/* Nav Styling */
+
+nav {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-container {
+    color: navy;
+    background-color: blanchedalmond;
+}
+
+.navlink {
+    display: inline;
+    background-color: blanchedalmond;
+    color: navy;
+}
+
+.navlink li {
+    display: inline-block;
+}
+
+.navlink li:hover {
+    background-color: bisque;
+    color: rgb(0, 0, 107);
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Column Styling */
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 50%;
+    color: rgb(0, 20, 87);
+    max-height: fit-content;
+    max-width: 50%;
+    justify-content: center;
 }
