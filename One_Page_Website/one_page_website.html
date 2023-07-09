@@ -4,6 +4,7 @@
 		<title> Harlo Website </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script src="JS/onepage.js" defer></script>
 	</head>
 	<body>
 		<nav>
@@ -22,6 +23,74 @@
 				<h3> This page is about my dog Harlo.</h3>
 				<p> She is the best dog! </p>
 			</div>
+			<!--Pictures used to open the Lightbox-->
+			<div class="row1">
+				<div class="column1">
+					<img src="images/harlo1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column1">
+					<img src="images/harlo2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column1">
+					<img src="images/harlo3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column1">
+					<img src="images/harlo4.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+			</div>
+			<!--The Lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="images/harlo1_wide.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/harlo2_wide.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/harlo3_wide.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/harlo4_wide.jpg" style="width: 100%">
+					</div>
+
+					<!--Next/Previous Controls-->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!--Caption Text-->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!--Thumbnail image controls-->
+					<div class="column1">
+						<img class="demo" src="images/harlo1.jpg" onclick="currentSlide(1)" alt="My Dog Harlo">
+					</div>
+
+					<div class="column1">
+						<img class="demo" src="images/harlo2.jpg" onclick="currentSlide(2)" alt="My Dog Harlo">
+					</div>
+
+					<div class="column1">
+						<img class="demo" src="images/harlo3.jpg" onclick="currentSlide(3)" alt="My Dog Harlo">
+					</div>
+
+					<div class="column1">
+						<img class="demo" src="images/harlo4.jpg" onclick="currentSlide(4)" alt="My Dog Harlo">
+					</div>
+				</div>
+			</div>
+
+
 			<div id="pictures">
 				<div class="row">
 					<div class="column">
