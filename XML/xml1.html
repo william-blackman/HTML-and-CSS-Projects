@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p id="XML_Example">test</p>
+        <script>
+            var XML_Parser, XML_Document;
+            var Car = "<car>" +
+                "<make>Tesla</make>" +
+                "<model>Cybertruck</model>" +
+                "<engine>electric</engine>" +
+                "<year>2023</year>" +
+                "</car>";
+            XML_Parser = new DOMParser();
+            XML_Document = XML_Parser.parseFromString(Car,"text/xml");
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName('model')[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
